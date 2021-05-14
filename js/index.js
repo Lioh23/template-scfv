@@ -1,6 +1,6 @@
 const insertUser = document.querySelector('#insert-user');
 const users = document.querySelector('#users');
-const arrUsers = [];
+const arrUsers = [userComponent];
 
 insertUser.addEventListener('click', event => {
 	event.preventDefault();

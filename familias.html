@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atendimentos CRAS</title>
+
+	<!-- CHARSET -->
+	<meta charset="utf-8">
+
+	<!-- NORMALIZE CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="font-awesome/css/all.css">
+
+	<!-- ESTILO CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css" content="width=device-width,initial-sacle=1.0">
+</head>
+<body>
+
+ <div id="app">
+ 	<aside class="sidebar">
+ 		<a href="#" class="toggle-button"><i class="fa fa-bars"></i></a>
+ 	</aside>
+ 	<main>
+ 		<div class="flex-title">
+ 			<div class="flex-item">
+ 				<h2 class="page-title"> 
+	 			<i class="fa fa-users"></i> Famílias Cadastradas</h2>
+	 		</div>
+	 		<div class="flex-item">
+ 				<a href="cadastro-familia.html" class="button-new"> <i class="fa fa-users"></i> Nova Família</a>
+	 		</div>
+ 		</div>
+ 			
+ 		
+ 		<section class="frame">
+ 			<form method="POST">
+ 				<fieldset>
+ 					<legend>Buscar Família</legend>
+ 					<div class="flex-row">
+ 						<div class="form-item" style="width: 50%">
+ 							<label for="nome">Nome</label>
+	 						<input type="text" name="nome" id="nome">
+ 						</div>
+ 						<div class="form-item" style="width: 15%">
+ 							<label for="nis">NIS</label>
+	 						<input type="text" name="nis" id="nis">
+ 						</div>
+ 						<div class="form-item" style="width: 15%">
+ 							<label for="cpf">CPF</label>
+	 						<input type="text" name="cpf" id="cpf">
+ 						</div>
+ 					</div>
+ 				</fieldset>
+
+ 				<table>
+ 					<thead>
+ 						<tr>
+ 							<th>Responsável Familiar</th>
+ 							<th>NIS</th>
+ 							<th>CPF</th>
+ 							<th>Ações</th>
+ 						</tr>
+ 					</thead>
+ 						<tr>
+ 							<td>Fabiana de Jesus dos Santos</td>
+ 							<td>11759875470</td>
+ 							<td>127.636.957-81</td>
+ 							<td> Ações </td>
+ 						</tr>
+ 						<tr>
+ 							<td>Marcelo Pereira</td>
+ 							<td>11759875470</td>
+ 							<td>127.636.957-81</td>
+ 							<td> Ações </td>
+ 						</tr>
+ 						<tr>
+ 							<td>Juliana Gil da Silva esmério</td>
+ 							<td>11759875470</td>
+ 							<td>127.636.957-81</td>
+ 							<td> Ações </td>
+ 						</tr>
+
+ 					<tbody>
+ 						
+ 					</tbody>
+ 				</table>
+ 			</form>
+ 		</section>
+ 	</main>
+
+ </div>
+	
+	<script type="text/javascript" src="font-awesome/js/all.js"></script>
+	<script src="./js/user-component.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>
