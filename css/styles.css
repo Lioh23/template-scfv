@@ -1,0 +1,160 @@
+* {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html {
+	height: auto;
+}
+
+body {
+	margin: 0;
+	border: 0;
+	width: 100%;
+	min-height: 100%;
+	background: radial-gradient(circle, rgba(25,240,209,1) 0%, rgba(28,129,143,1) 100%);
+}
+
+
+
+/*sidebar*/
+
+.sidebar {
+	position: fixed;
+	height: auto;
+	min-height: 100%;
+	background: #000;
+	width: 200px;
+	padding: 20px;
+}
+
+.sidebar .toggle-button {
+	display: block;
+	text-align: right;
+	color: white;
+	font-size: 1.2em;
+}
+
+/*FORMULARIO DE CADASTRO*/
+
+label {
+	color: gray;
+	font-weight: bold;
+	font-size: .9em;
+}
+
+option {
+	color: gray;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+.flex-row {
+	display: flex;
+	padding-bottom: 5px;
+}
+
+#app {
+	display: flex;
+	width: 100%;
+}
+
+
+#app > main {
+
+	margin-left: 200px;
+	padding: 30px;
+	width: 100%;
+	height: 100vh;
+	/*background: #f9f9f9;*/
+	
+}
+
+#app .page-title {
+	font-size: 2.4em;
+	font-weight: normal;
+	margin-bottom: 30px;
+	color: #FDFDFD;
+	letter-spacing: 3px;
+}
+
+#app .frame {
+	background: #fff;
+	padding: 25px;
+	border: 1px solid lightgray;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	float: left;
+	width: 100%;
+}
+
+fieldset {
+	padding: 15px 7px;
+	border-radius: 10px;
+	border: 2px solid #089a85;
+	margin-bottom: 30px;
+	background: #fefefe;
+}
+
+legend {
+	padding: 0 15px;
+	color: gray;
+	font-weight: bold;
+}
+
+.add-member {
+	float: right;
+	margin-right: 15px;
+	font-size: 1.2em;
+}
+
+.form-item {
+	padding: 0 10px;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+	width: 100%;
+	display: block;
+	padding: 5px;
+	font-size: .9rem;
+	margin: 4px 0;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+}
+
+.btn-submit {
+	float: right;;
+	border: none;
+	background: #1c818f;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 5px 13px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 3px;
+}
+
+.btn-submit:hover {
+	background-color: #089a85;
+}
+
+.users {
+	transition: all .5s ease;
+}
+
+
+
+@keyframe toggle {
+	from {
+		width: 240px;
+	}
+
+	to {
+		width: 40px;
+	}
+}

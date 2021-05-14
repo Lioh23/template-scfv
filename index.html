@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atendimentos CRAS</title>
+
+	<!-- CHARSET -->
+	<meta charset="utf-8">
+
+	<!-- NORMALIZE CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="font-awesome/css/all.css">
+
+	<!-- ESTILO CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css" content="width=device-width,initial-sacle=1.0">
+</head>
+<body>
+
+ <div id="app">
+ 	<aside class="sidebar">
+ 		<a href="#" class="toggle-button"><i class="fa fa-bars"></i></a>
+ 	</aside>
+ 	<main>
+ 		<h2 class="page-title"> <i class="fa fa-users"></i> Cadastrar Família</h2>
+ 		<section class="frame">
+ 			<form method="POST">
+ 				<fieldset>
+ 					<legend>Informações Gerais</legend>
+ 					<div class="flex-row">
+ 						<div class="form-item" style="width: 15%">
+ 							<label for="cep">CEP</label>
+	 						<input type="text" name="cep" id="cep">
+ 						</div>
+ 					</div>
+ 					<div class="flex-row">
+ 						<div class="form-item" style=" width: 40%">
+	 						<label for="logradouro">Logradouro</label>
+	 						<input type="text" name="logradouro" id="logradouro">
+	 					</div>
+						<div class="form-item" style="width: 10%">
+	 						<label for="numero">Número</label>
+	 						<input type="text" name="numero" id="numero">
+	 					</div>
+	 					<div class="form-item" style="width: 20%">
+	 						<label for="complemento">Complemento</label>
+	 						<input type="text" name="complemento" id="complemento">
+	 					</div>
+	 					<div class="form-item" style="width: 25%">
+	 						<label for="bairro">Bairro</label>
+	 						<input type="text" name="bairro" id="bairro">
+	 					</div>
+ 					</div>
+ 					<div class="flex-row">
+ 						<div class="form-item" style="width: 20%">
+ 							<label for="telefone1">Telefone</label>
+	 						<input type="text" name="telefone1" id="telefone1">
+ 						</div>
+ 						<div class="form-item" style="width: 20%">
+ 							<label for="telefone2">Telefone adicional</label>
+	 						<input type="text" name="telefone2" id="telefone2">
+ 						</div>
+ 						<div class="form-item" style="width: 25%">
+	 						<label for="encminhado">Encaminhado</label>
+	 						<select name="encminhado" id="encminhado">
+	 							<option>Selecione</option>
+	 							<option value="cras-ml">Cras Maria de Lourdes</option>
+	 							<option value="creas">CREAS</option>
+	 							<option value="demanda-espontanea">Demanda Espontânea</option>
+	 						</select>
+	 					</div>
+ 					</div>
+ 					<div class="flex-row">
+ 						
+ 					</div>
+ 					<div class="flex-row">
+ 						<div class="form-item" style="width: 100%">
+ 							<label for="vulterabilidade">Descrição da Vulnerabilidade</label>
+ 							<textarea></textarea>
+ 						</div>
+ 					</div>
+ 				</fieldset>
+
+ 				<fieldset>
+ 					<legend>Informações do usuário</legend>
+ 					<div id="users"></div>
+ 					<button id="insert-user">Novo usuário</button>
+ 				</fieldset>
+
+ 				<input type="submit" class="btn-submit" value="Cadastrar">
+ 			</form>
+ 		</section>
+ 	</main>
+
+ </div>
+	
+	<script type="text/javascript" src="font-awesome/js/all.js"></script>
+	<script src="./js/user-component.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>
