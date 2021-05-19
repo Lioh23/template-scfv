@@ -16,7 +16,10 @@ body {
 	background: radial-gradient(circle, rgba(25,240,209,1) 0%, rgba(28,129,143,1) 100%);
 }
 
-
+:root {
+	--primary: ;
+	--seccondary: #063F44;
+}
 
 /*sidebar*/
 
@@ -24,7 +27,7 @@ body {
 	position: fixed;
 	height: auto;
 	min-height: 100%;
-	background: #000;
+	background: #063F44;
 	width: 200px;
 	padding: 20px;
 }
@@ -32,7 +35,7 @@ body {
 .sidebar .toggle-button {
 	display: block;
 	text-align: right;
-	color: white;
+	color: #fafafa;
 	font-size: 1.2em;
 }
 
@@ -131,6 +134,7 @@ legend {
 	margin: 4px 0;
 	border: 1px solid lightgray;
 	border-radius: 4px;
+	color: #212529;
 }
 
 .btn-submit {
@@ -145,7 +149,7 @@ legend {
 	cursor: pointer;
 	margin-left: 3px;
 }
-
+/* usuario */
 #insert-user {
 	background-color: white;
 	border-radius: 7px;
@@ -154,7 +158,9 @@ legend {
 	color: #089a85;
 	font-weight: bold;
 	position: relative;
-	bottom: 20px;
+	/*bottom: 20px;*/
+	margin-left: 10px;
+	margin: 5px 0 0 10px;
 	transition: all .1s ease;
 }
 
@@ -164,12 +170,33 @@ legend {
 	cursor: pointer;
 }
 
+
+.user-trash {
+	position: absolute;
+	color: lightgray;
+	bottom: 10px;
+	right: 10px;
+	padding: 6px;
+	transition: all .3s ease;
+	border-radius: 7px;
+}
+
+.user-trash:hover {
+	color: red;
+	
+}
+
 .btn-submit:hover {
 	background-color: #089a85;
 }
 
-.users {
+#users {
+	
 	transition: all .5s ease;
+}
+
+.user {
+	position: relative;
 }
 
 /* new-button */
@@ -195,6 +222,21 @@ legend {
 
 /*Tabela*/
 
+.table-actions a {
+	display: inline-block;
+	padding: 0 5px;
+	color: gray;
+	transition: all .2s ease;
+}
+
+.table-actions a:nth-child(1):hover {
+	color: green;
+}
+
+.table-actions a:nth-child(2):hover {
+	color: #FF1101;
+}
+
 table {
 	width: 100%;
 	text-align: center;
@@ -214,6 +256,6 @@ tbody {
 	font-size: 0.9em;
 }
 
-tbody tr {
-
+#general-infos {
+	display: flex;
 }
