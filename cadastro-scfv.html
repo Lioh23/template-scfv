@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atendimentos CRAS</title>
+
+	<!-- CHARSET -->
+	<meta charset="utf-8">
+
+	<!-- NORMALIZE CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="font-awesome/css/all.css">
+
+	<!-- ESTILO CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css" content="width=device-width,initial-sacle=1.0">
+</head>
+<body>
+
+ <div id="app">
+ 	<aside class="sidebar">
+ 		<a href="#" class="toggle-button"><i class="fa fa-bars"></i></a>
+ 	</aside>
+ 	<main>
+ 		<div class="flex-title">
+ 			<div class="flex-item">
+ 				<h2 class="page-title"> <i class="fa fa-comments"></i> Cadastrar Serviço de Convivência</h2>
+ 			</div>
+ 			<div class="flex-item">
+ 				<a href="familias.html" class="button-new"> <i class="fa fa-angle-double-left"></i> Voltar</a>
+ 			</div>
+ 		</div>
+ 		
+ 		<section class="frame">
+ 			<form method="POST">
+ 				<fieldset id="general-infos">
+ 					<legend>Informações Gerais</legend>
+ 					<div class="flex-row">
+ 						<div class="form-item" style="width: 40%">
+ 							<label for="titulo">Título</label>
+	 						<input type="text" name="titulo" id="titulo">
+ 						</div>
+ 						<div class="form-item" style="width: 35%">
+	 						<label for="tecnico">Técnico de Referência</label>
+	 						<select name="tecnico" id="tecnico">
+	 							<option>Selecione</option>
+	 							<option value="cras-ml">Nathalia de Paula Peixoto</option>
+	 							<option value="creas">Paôlla Vicente</option>
+	 							<option value="demanda-espontanea">Danielle de Alguma Coisa</option>
+	 						</select>
+	 					</div>
+ 					</div>
+ 					
+ 						
+ 					<div class="flex-row">
+ 						<div class="form-item" style="width: 75%">
+ 							<label for="descricao">Descrição</label>
+ 							<textarea name="descricao" id="descricao"></textarea>
+ 						</div>
+ 					</div>
+ 				</fieldset>
+
+ 				
+ 				<input type="submit" class="btn-submit" value="Cadastrar">
+ 			</form>
+ 		</section>
+ 	</main>
+
+ </div>
+	
+	<script type="text/javascript" src="font-awesome/js/all.js"></script>
+	<script src="./js/user-component.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

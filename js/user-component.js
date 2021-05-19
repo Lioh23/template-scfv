@@ -1,4 +1,5 @@
 const userComponent = `
+<a href="#" class="user-trash"><i class="fa fa-trash"></i></a>
 <div class="flex-row">
 	<div class="form-item" style=" width: 40%">
 		<label for="rua">Nome</label>
